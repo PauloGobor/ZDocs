@@ -12,7 +12,7 @@ sap.ui.define([
 		onInit: function () {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.getRoute("Detalhes").attachMatched(this._onRoute, this);
-			console.log(oRouter)
+		
 		},
 		_onRoute: function (evt) {
 			var oArgs = evt.getParameter("arguments"); //jogamntdo os argumenos do route( todos os paramentros )
@@ -35,7 +35,7 @@ sap.ui.define([
 					}
 				}
 			});
-			console.log(sURL);
+		
 		},
 
 		onBeforeRendering: function (evt) {

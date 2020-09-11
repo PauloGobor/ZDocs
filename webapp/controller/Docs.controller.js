@@ -19,8 +19,7 @@ sap.ui.define([
 			var selectedIdDoc = evt.getSource().getBindingContext().getProperty("Ebeln");
 			var selectedIdMat = evt.getSource().getBindingContext().getProperty("Matnr");
 			//acesso o contexto de selecao
-			console.log(selectedIdDoc);
-			console.log(selectedIdMat);
+
 			oRouter.navTo("Detalhes", {
 				///acessa o router detalhes
 				Matnr: selectedIdMat,
